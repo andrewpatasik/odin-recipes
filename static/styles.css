@@ -1,0 +1,62 @@
+/* reset */
+@import url(./reset.css);
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: .25rem 1.5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: .5rem 0;
+}
+
+.heading.sub-heading {
+  font-size: 1.5rem;
+}
+
+h3.heading  {
+  font-size: 1rem;
+}
+
+.recipe-pic {
+  width: 50%;
+}
+
+.list {
+  margin: 1rem;
+  padding-left: 1.5rem;
+}
+
+.list > li {
+  margin: .5rem 0;
+  padding-inline-start: .25rem;
+  list-style-type: disc;
+}
+
+.list > li::marker {
+  color: hotpink;
+}
+
+.list#recipe-list > li {
+  list-style-type: '👉';
+}
+
+/* nested list */
+.list#ingredient-list > li {
+  list-style-type: '👉';
+}
+
+.list#ingredient-list > li > ul {
+  margin: 0 1rem;
+  padding-left: .5rem;
+}
+
+.list#ingredient-list > li > ul > li {
+  list-style-type: disc;
+}
+
+.list#ingredient-list > li > ul > li::marker {
+  color: hotpink;
+}
